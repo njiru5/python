@@ -2,9 +2,7 @@
 student_name="kamau" #string
 student_age=20 #integer
 student_height=7.5 #float
-
-
-
+"""
 print(student_height)
 print("my students name is:",student_name)
 print("kamau age is:",student_age)
@@ -57,3 +55,116 @@ if nationality=="kenya" and age==35:
     print("you can be president")
 else:
     print("you can't be president")
+
+x=30
+if x%2==0:
+    print("even")
+else:
+    print("odd")
+
+#illustrattion of the elif
+z=5
+if z>3:
+    print("the value in z is greater than 3")
+elif z==3:
+    print("the value of z is equal to 3")
+else:
+    print("the value of z is less than 3")
+
+#checking the city of our candidate
+#city=input("enter your city name:")
+#if city=="mombasa":
+  #  print("elligible")
+#elif city=="nairobi":
+   # print("elligible")
+#elif city=="machakos":
+ #   print("elligible")
+#else:
+ #    print("not elligible")
+
+y=int(input("enter your first number:"))
+x=int(input("enter your second number:"))
+user=str(input("enter your choices:"))
+if user=="add":
+    total= x+y
+    print(total)
+elif user=="mutiply":
+    total= x*y
+    print(total)
+else:
+    total= x-y
+    print(total)
+"""
+"""
+#continue and the break statement
+x=1
+while x<=10:
+    if x==3:
+        x += 1
+        continue
+    print(x)
+    x+=1
+print("end of break statement")
+
+y=3
+while y<=10:
+    print("the value of y is:",y)
+    y+=1
+else:
+    print("loop ended")
+
+x=0
+sum=0
+while x<=10:
+    if x%2==0:
+        x=x+1
+        continue
+    else:sum=sum+x
+    x=x+1
+else:
+    print(sum)
+visitors=int(input("enter the number of visitors:"))
+uganda=0
+kenyan=0
+counter=1
+while counter<=visitors:
+    nationality=input("enter the nationality:")
+    if nationality=="kenyan":
+        kenyan+=1
+        print("allowed")
+        counter+=1
+    else:
+        uganda+=1
+        print("not allowed")
+        counter+=1
+
+print("the number of visitors is:",visitors)
+print("the number of kenyans is:",'kenya' )
+print("the number of ugandans is:",'uganda')
+"""
+#for loop implementation
+cars=["car","bus","car"]
+for car in cars:
+    print( car)
+
+for x in range (3):
+    print("yng")
+
+#even numbers
+sum=0
+for x in range(1,11):
+     if x%2==0:
+         sum=sum+x
+print("sum of even numbers:",sum)
+
+#data structures
+mystudents=["ethan","john","michael"]
+print(mystudents)
+mystudents.append("moses") #adding
+print(mystudents)
+mystudents.remove("michael") #removing
+print(mystudents)
+mystudents.remove(mystudents[1])
+print(mystudents)
+mystudents[0]="ethan2.0"  #modifying
+print(mystudents)
