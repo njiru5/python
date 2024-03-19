@@ -141,7 +141,7 @@ while counter<=visitors:
 print("the number of visitors is:",visitors)
 print("the number of kenyans is:",'kenya' )
 print("the number of ugandans is:",'uganda')
-"""
+
 #for loop implementation
 cars=["car","bus","car"]
 for car in cars:
@@ -168,3 +168,56 @@ mystudents.remove(mystudents[1])
 print(mystudents)
 mystudents[0]="ethan2.0"  #modifying
 print(mystudents)
+                                       
+#student list
+students=[]
+student1=input("enter the first")
+print=("you have entered the name:",student1)
+students.append(student1)
+
+student2=input("enter the second")
+print=("you have entered the name:",student2)
+students.append(student2)
+
+student3=input("enter the third:")
+print=("you have entered the name:",student3)
+students.append(student3)
+print(students)
+
+#lists 2.0
+students=[]
+print("enter 5 names:")
+for students in range(5):
+    students=input("enter name")
+    students.append("students")
+print("list of students:",students)
+"""
+#tuples
+mytuple=("ethan","john","michael")
+#properties of tuples
+"""
+1.tuples are immutable ie they cannot be changed directly
+2.elements in tuple are indexed 
+3.tuples are usually round brackets
+4.tuples allows duplicates
+5.tuples can have elements of different data types
+"""
+"""
+print(mytuple[1])
+mytuple[1]="john" #this will give an error because we cannot change tuples directly
+print(mytuple[1])
+"""
+#to modify/add/delete tuples
+"""
+1.convert the tuple to list
+     mylist=list(thetuplename)     
+2.modify the value you wanted the same way we did in lists
+     example on modifications:
+           student[0]="ethan"
+     example on deleting:
+           student.remove(student[0])
+      example on adding:
+            student.append("moses")
+3.convert it back to a tuple 
+     mytuple=tuple(thelistname)                                           
+"""
