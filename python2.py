@@ -72,10 +72,25 @@ person_instance.set_values("19","ethan","nairobi")
 print("age:",person_instance.person_age,"name:",person_instance.person_name,"residence:",person_instance.person_residence)
 #polymorphism
 class animal:
+   def __init__(self):
+       pass
    def speak(self):
-     pass
+       print("I am animal and i speak")
 
+class dog(animal):
+    def __init__(self):
+        pass
+    def speak(self):
+        print("I am a dog and i bark" )
 
+class cat(animal):
+    def __init__(self):
+        pass
+    def speak(self):
+        print("I am a cat and i meow")
 
+dog1=dog()
+dog1.speak()
 
-
+cat1=cat()
+cat1.speak()
